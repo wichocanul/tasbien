@@ -1,0 +1,430 @@
+@font-face{
+    font-family: "arame";
+    src: url(../fonts/Arame-Bold.ttf);
+}
+
+@font-face{
+    font-family: "rubik";
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--=====================================
+		NAV
+======================================--*/
+
+
+header{
+    width: 100%;
+    height: 70px;
+    background: #2c4682;
+    position: fixed;
+}
+
+.cont-nav{
+    width: 100%;
+    font-family: "arame";
+}
+
+.cont-nav .logo{
+    width: 200px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.cont-nav .logo h4{
+    width: 100%;
+    line-height: 70px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.cont-nav nav{
+    width: 100%;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.cont-nav nav ul{
+    width: auto;
+    height: 70px;
+    float: right;
+}
+
+.cont-nav nav ul li{
+    display: inline-block;
+    margin: 0 0px 0 5px;
+}
+
+.cont-nav nav ul li a{
+    display: block;
+    font-size: 1em;
+    line-height: 70px;
+    padding: 0 15px;
+    text-decoration: none;
+    background: #2c4682;
+    color: #fff;
+    transition: all .7s ease-out;
+}
+
+.cont-nav nav ul li a:hover{
+    background: #283e72;
+    color: #56dee2;
+}
+
+.cont-nav .desplegar{
+    width: 100%;
+    height: 70px;
+    color: #fff;
+}
+
+.cont-nav .desplegar button{
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    background: #2c4682;
+    border: 2px solid #d0daf1;
+    border-radius: 60%;
+    color: #fff;
+    line-height: 35px;
+    font-size: 2em;
+    transition: all .7s ease-out;
+}
+
+.cont-nav .desplegar button:hover{
+    margin-right: 30px;
+    margin-top: 15px;
+    background: #2c4682;
+    color: #1d9da1;
+    border: 2px solid #1d9da1;
+}
+
+.nav2{
+    display: none;
+    font-family: "arame";
+    width: 100%;
+    height: 100vh;
+    background: #0e182f;
+}
+.nav2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav2 ul li{
+    display: inline-block;
+    width: 49%;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px auto;
+}
+
+.nav2 ul li a{
+    position: relative;
+    color: #fff;
+    font-size: .7em;
+    padding: 5px 30px;
+    border-radius: 50px;
+    transition: all .7s ease-out;
+}
+
+.nav2 ul li a:hover{
+    text-decoration: none;
+    background: #283e72;
+    color: #1d9da1;
+}
+
+/*--=====================================
+    CONTENIDO
+======================================--*/
+
+.contenido{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #1d9da1;
+    z-index: -1;
+}
+
+
+/*--=====================================
+    MENU IZQUIERDO
+======================================--*/
+
+.contenido .menu-izq{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0e182f;
+    font-family: "rubik";
+    z-index: 2;
+}
+
+.contenido .menu-izq .cont-izq{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-izq .cont-izq .opciones{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100px;
+}
+
+.opciones .opc{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    float: right;
+    margin-top: 3px;
+    border-bottom: 2px solid rgba(168, 168, 168, 0);
+    transition: all .7s ease-in-out;
+}
+
+.opciones .opc:hover{
+    background: #111c36;
+    border-bottom: 2px solid rgb(168, 168, 168);
+}
+
+.opciones .opc img{
+    height: 20px;
+    margin: auto 0;
+}
+
+.opciones .opc a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 1px;
+    color: #fff;
+    font-family: "rubik";
+}
+
+.opciones .opc .notify a p{
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background: rgb(255, 136, 0);
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.menu-izq .cont-izq .cerrar{
+    position: absolute;
+    color: #fff;
+    width: 110%;
+    height: 40px;
+    bottom: 20px;
+    left: -14px;
+    background: red;
+    line-height: 40px;
+}
+
+.opciones .cerrar2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    float: left;
+    top: 100px;
+    left: -20px;
+    background: red;
+}
+
+.opciones .cerrar2 a{
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.opciones .cerrar2 a p{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.menu-izq .cont-izq .cerrar a{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contenido .mostrar button{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #283e72;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    font-family: "arame";
+    color: #fff;
+    font-size: 2em;
+    border: 1px solid #fff;
+    z-index: 2;
+}
+
+
+/*--=====================================
+    MENU PRINCIPAL
+======================================--*/
+.contenido .principal{
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: 70px;
+    z-index: 0;
+}
+
+
+
+
+/*--=====================================
+    TIERRA
+======================================--*/
+.containerr{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#053e57,#01212e,  #011016);
+}
+
+.contenedor, .mapa, .orbita, .luna{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.contenedor{
+    width: 300px;
+    height: 300px;
+    /*border: 1px rosybrown solid;*/
+}
+
+.nubes{
+    width: 200px;
+    height: 200px;
+}
+
+.nubes img{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    z-index: 2;
+}
+
+#nube1{
+    height: 35px;
+    top: 40px;
+    left: 70px;
+
+    animation: nubes1 5s infinite linear;
+}
+#nube2{
+    width: 90px;
+    height: 40px;
+    top: 130px;
+    left: 200px;
+    animation: nubes2 4s infinite linear;
+}
+#nube3{
+    width: 90px;
+    height: 35px;
+    top: 230px;
+    left: 50px;
+    animation: nubes1 4s infinite linear;
+}
+
+.mapa{
+    width: 200px;
+    height: 200px;
+    background: url(img/cont.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: -30px -20px 0 0 rgba(0, 0, 0, .1) inset,
+                -60px -30px 0 0 rgb(0, 0, 0, .1) inset,
+                5px 5px 0 0 rgb(255, 255, 255, .2) inset;
+    animation: tierra-girando 4s infinite linear;
+
+    
+}
+
+.orbita{
+    width: 300px;
+    height: 300px;
+    background: none;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: luna 9s linear infinite;
+}
+
+.luna{
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    left: -330px;    
+    
+}
+
+@keyframes tierra-girando {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: -400px center;
+    }
+}
+
+@keyframes nubes1 {
+    0% {
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes nubes2{
+    0% {
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: -50px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes luna{
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
